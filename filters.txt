@@ -2,7 +2,7 @@
 ! Title: Daniel's uBlock filters
 ! Description: Unbreak pages, unrestrict user actions and stuff
 ! Expires: 4 days
-! Last modified: Sun, 21 Nov 2025 20:17:00 +0100
+! Last modified: Fri, 06 Feb 2026 11:00:00 +0100
 ! Homepage: https://github.com/btzdnl/adblock-filters
 ! Licence: https://github.com/btzdnl/adblock-filters/blob/main/LICENSE
 !
@@ -30,6 +30,7 @@ www.heise.de##article[data-component=TeaserContainer]:has(span.theme-techstage)
 www.heise.de##article[data-component=TeaserContainer]:has(span.theme-t3n)
 www.heise.de##article[data-component=TeaserContainer]:has(a[href^="https://www.heise.de/bestenlisten"])
 www.heise.de##div[data-module-name=TeasersModule]:has(div[data-component="MeineThemenTeasersModuleContainer"])
+www.heise.de##div[data-module-name=TeasersModule]:has(a[href^="https://www.heise.de/bestenlisten"])
 www.heise.de##div[data-module-name=PodcastModule]
 www.heise.de##div[data-module-name=GroupModule]:has-text(meistkommentiert)
 www.heise.de##div[data-module-name=GroupModule]:has-text(Kurzvideos)
@@ -44,7 +45,6 @@ www.spiegel.de##section[data-area="block>magletter"]
 www.spiegel.de##section[data-area="block>magletterarticles"]
 
 ! Consent
-superuser.com##.js-consent-banner
 ||cmp.heise.de^
 www.wetter.com###wcom-cmp
 www.wetter.com###cmp-wetter
@@ -67,4 +67,4 @@ youtube.com##ytd-reel-shelf-renderer
 smartlock.google.com
 
 ! Fix Bofrost jumping page on scroll
-bofrost.de##.menu-is-sticky .site:style(margin-top: 181.867px !important)
+bofrost.de##.menu-is-sticky .site:style(padding-top: 181.867px !important)
