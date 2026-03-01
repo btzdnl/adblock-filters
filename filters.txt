@@ -2,7 +2,7 @@
 ! Title: Daniel's uBlock filters
 ! Description: Unbreak pages, unrestrict user actions and stuff
 ! Expires: 4 days
-! Last modified: Fri, 06 Feb 2026 11:00:00 +0100
+! Last modified: Sun, 01 Mar 2026 19:30:00 +0100
 ! Homepage: https://github.com/btzdnl/adblock-filters
 ! Licence: https://github.com/btzdnl/adblock-filters/blob/main/LICENSE
 !
@@ -30,13 +30,15 @@ www.heise.de##article[data-component=TeaserContainer]:has(span.theme-techstage)
 www.heise.de##article[data-component=TeaserContainer]:has(span.theme-t3n)
 www.heise.de##article[data-component=TeaserContainer]:has(a[href^="https://www.heise.de/bestenlisten"])
 www.heise.de##div[data-module-name=TeasersModule]:has(div[data-component="MeineThemenTeasersModuleContainer"])
-www.heise.de##div[data-module-name=TeasersModule]:has(a[href^="https://www.heise.de/bestenlisten"])
+www.heise.de##div[data-module-name=TeasersModule]:has(h2:has-text(bestenlisten by TechStage))
 www.heise.de##div[data-module-name=PodcastModule]
 www.heise.de##div[data-module-name=GroupModule]:has-text(meistkommentiert)
 www.heise.de##div[data-module-name=GroupModule]:has-text(Kurzvideos)
 www.heise.de##div[data-module-name=NewsletterModule]
 www.heise.de##div[data-module-name=SocialMediaModule]
 www.heise.de##div[data-module-name=PreisvergleichModule]
+www.heise.de##div[data-module-name=MarketingTeasersModule]
+www.heise.de##a-scroll-container ul > li:has(a[href^="https://www.heise.de/bestenlisten"])
 www.heise.de##a-include[src^="/api/meine-themen"]
 www.heise.de##a-sticky-footer
 www.ka-news.de###webpush-app
